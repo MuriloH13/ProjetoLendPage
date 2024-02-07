@@ -2,6 +2,8 @@ function togglemode() {
   const html = document.documentElement
   const img = document.querySelector("#profile img")
 
+  html.classList.toggle("light")
+
   if (html.classList.contains("light")) {
     img.setAttribute("src", "./assets/eu-light.png")
   } else {
@@ -13,5 +15,4 @@ function togglemode() {
   // } else {
   // html.classList.add("light")
   // }
-  html.classList.toggle("light")
 }
